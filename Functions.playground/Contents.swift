@@ -18,6 +18,7 @@ func getAge(name: String) -> Int {
 /*
 func badGetAge(name: String) -> Int {
     print("\(name) is 29")
+    return 29
 }
 */
 
@@ -31,6 +32,8 @@ func birthdayGreeting(age: Int) -> String {
     return "Happy birthday #\(age)!"
 }
 
+birthdayGreeting(30)
+
 var greeting = birthdayGreeting(30)
 print(greeting)
 
@@ -43,3 +46,17 @@ func getAgeAndCongratulate(name: String) -> Int {
 
 let friend2 = "Pete"
 var friend2Age = getAgeAndCongratulate(friend2)
+print(friend2Age)
+
+
+func letsGoSkate(hitMeUp: Bool?) -> String {
+    let hitMeUp = true
+    if hitMeUp == true {
+        return "LETS GO!"
+    }
+    else {
+        return "Ok, hit me up tomorrow"
+    }
+}
+
+letsGoSkate(true)
